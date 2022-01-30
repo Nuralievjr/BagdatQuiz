@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from api.views import *
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('secret/', admin.site.urls),
     path('answer/', MyApi.as_view()),
-]
+]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
