@@ -13,13 +13,13 @@ class Quiz(models.Model):
     country = models.CharField("Страна", max_length=200)
     created = models.DateTimeField(auto_now_add=True)
 
-    res1 = models.CharField(max_length=255)
-    res2 = models.CharField(max_length=255)
-    res3 = models.CharField(max_length=255)
-    res4 = models.CharField(max_length=255)
-    res5 = models.CharField(max_length=255)
-    res6 = models.CharField(max_length=255)
-    res7 = models.CharField(max_length=255)
+    res1 = models.CharField("Ценностно-смысловая организация личности", max_length=255)
+    res2 = models.CharField("Организация деятельности", max_length=255)
+    res3 = models.CharField("Решительность", max_length=255)
+    res4 = models.CharField("Настойчивость", max_length=255)
+    res5 = models.CharField("Самообладание", max_length=255)
+    res6 = models.CharField("Самостоятельность", max_length=255)
+    res7 = models.CharField("Показатель лжи", max_length=255)
 
     class Meta:
         verbose_name = "Тест"
