@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'quiz',
         'USER': 'quiz_user',
         'PASSWORD': 'Amaterasu1',
-        'HOST': '188.227.16.66',
+        'HOST': '127.0.0.1',
         'PORT': 5432,
     }
 }
