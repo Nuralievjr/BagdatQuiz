@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd3dfqlvdssiboq',
-        'USER': 'ygqnwcfcuwsheb',
-        'PASSWORD': 'bfcb4ae9a56603d7b91267e306aeaec660f8513afa618c07ae6b82e599a87056',
-        'HOST': 'ec2-54-208-139-247.compute-1.amazonaws.com',
+        'NAME': 'quiz',
+        'USER': 'quiz_user',
+        'PASSWORD': 'Amaterasu1',
+        'HOST': '188.227.16.66',
         'PORT': 5432,
     }
 }
