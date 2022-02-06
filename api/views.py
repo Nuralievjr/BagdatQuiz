@@ -9,6 +9,10 @@ from django.db import transaction
 
 class MyApi(APIView):
 
+    def get(self, request):
+        code = Code.objects.filter().first()
+        return Response({"code": code.code if code else None}, status.HTTP_200_OK)
+
     @transaction.atomic
     def post(self, request):
         answers = request.data.get('answers', [])
@@ -24,6 +28,7 @@ class MyApi(APIView):
                 email=serializer.validated_data.get('email', ''),
                 age=serializer.validated_data.get('age', ''),
                 country=serializer.validated_data.get('country', ''),
+                is_parent=serializer.validated_data.get('is_parent', False),
                 res1=serializer.validated_data.get('results').get('res1'),
                 res2=serializer.validated_data.get('results').get('res2'),
                 res3=serializer.validated_data.get('results').get('res3'),

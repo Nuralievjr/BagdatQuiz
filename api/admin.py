@@ -10,3 +10,7 @@ class AnswerInline(admin.TabularInline):
 class UserAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name', 'phone', 'email', 'age', 'country']
     inlines = [AnswerInline]
+
+@admin.register(Code)
+class CodeAdmin(admin.ModelAdmin):
+    list_display = ['code', 'id']

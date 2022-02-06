@@ -21,6 +21,8 @@ class Quiz(models.Model):
     res6 = models.CharField("Самостоятельность", max_length=255)
     res7 = models.CharField("Показатель лжи", max_length=255)
 
+    is_parent = models.BooleanField("Родитель", default=False)
+
     class Meta:
         verbose_name = "Тест"
         verbose_name_plural = "Тесты"
@@ -39,5 +41,12 @@ class Answer(models.Model):
     class Meta:
         verbose_name = "Ответ"
         verbose_name_plural = "Ответ"
+
+class Code(models.Model):
+    code = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name = "Код"
+        verbose_name_plural = "Коды"
 
 
