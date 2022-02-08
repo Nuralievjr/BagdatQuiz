@@ -8,7 +8,7 @@ class AnswerInline(admin.TabularInline):
 
 @admin.register(Quiz)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ['first_name', 'last_name', 'phone', 'email', 'age', 'country']
+    list_display = ['first_name', 'last_name', 'phone', 'email', 'age', 'country', 'is_parent']
     inlines = [AnswerInline]
 
 @admin.register(Code)

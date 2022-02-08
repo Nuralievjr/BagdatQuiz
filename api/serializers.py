@@ -21,7 +21,7 @@ class AnswerSerializer(serializers.Serializer):
     phone = serializers.CharField(required=True)
     email = serializers.EmailField(required=True)
     age = serializers.CharField(required=True)
-    country = serializers.CharField(required=True)
+    sport = serializers.CharField(required=True)
     is_parent = serializers.BooleanField(required=True)
     answers = ARR(required=True, many=True)
     results = Res(required=True, many=False)

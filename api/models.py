@@ -10,7 +10,7 @@ class Quiz(models.Model):
     phone = models.CharField("Телефон", max_length=50)
     email = models.CharField("Почта", max_length=500)
     age = models.IntegerField("Год", max_length=200)
-    country = models.CharField("Страна", max_length=200)
+    country = models.CharField("Спорт", max_length=200)
     created = models.DateTimeField(auto_now_add=True)
 
     res1 = models.CharField("Ценностно-смысловая организация личности", max_length=255)
