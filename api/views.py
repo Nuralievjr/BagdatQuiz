@@ -27,7 +27,7 @@ class MyApi(APIView):
                 phone=serializer.validated_data.get('phone', ''),
                 email=serializer.validated_data.get('email', ''),
                 age=serializer.validated_data.get('age', ''),
-                country=serializer.validated_data.get('country', ''),
+                country=serializer.validated_data.get('sport', ''),
                 is_parent=serializer.validated_data.get('is_parent', False),
                 res1=serializer.validated_data.get('results').get('res1'),
                 res2=serializer.validated_data.get('results').get('res2'),
